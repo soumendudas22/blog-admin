@@ -1,0 +1,167 @@
+
+.add-entry-form-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.add-entry-form-wrapper > form {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 1fr 50px;
+}
+
+.add-entry-form-wrapper > form > div:first-child {
+  overflow-y: scroll;
+}
+
+.entry-form-control {
+  border-radius: 4px;
+  background-color: var(--primary-1);
+  padding: 15px;
+  margin: 10px 0;
+}
+
+.selected {
+  background-color: var(--primary-3);
+}
+
+.not-selected {
+  background-color: var(--primary-1);
+}
+
+.dynamic-form-entry-select {
+  display: grid;
+  grid-gap: 4px;
+  grid-template-columns: 1fr 40px;
+}
+
+.entry-form-control > div > button {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.form-entry-select {
+  display: flex;
+}
+
+.form-entry-select-icon {
+  border-radius: 3px 0  0 3px;
+  border-right: 2px solid grey;
+  background-color: white;
+  padding: 0 5px;
+  display: grid;
+  place-items: center;
+}
+
+.entry-form-control > div > div > select {
+  height: 30px;
+  padding: 4px;
+  outline: none;
+  border-radius: 0 3px 3px 0;
+  width: 100%;
+  letter-spacing: 1px;
+  border: none;
+  font-weight: bold;
+}
+
+.entry-form-control > div > select > option {
+  padding: 4px;
+}
+
+.entry-form-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.form-title {
+  color: white;
+  letter-spacing: 1px;
+  font-size: 0.7em;
+}
+
+.drag-handle {
+  width: 150px;
+  border-radius: 5px;
+  background-color: var(--primary-3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 10px;
+}
+
+.buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.entry-field-button {
+  display: grid;
+  place-items: center;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.entry-field-button:hover {
+  animation: scale-btn 0.5s ease-in;
+}
+
+.expand-fields {
+  height: 100%;
+}
+
+/* ***************************TAGS*************************** */
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag-wrapper {
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  margin: 5px;
+  background-color: orange;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+.tag-wrapper > button {
+  margin-left: 5px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  background-color: orangered;
+  color: white;
+  cursor: pointer;
+}
+
+/* *************************ANIMATION*********************** */
+
+@keyframes scale-btn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}

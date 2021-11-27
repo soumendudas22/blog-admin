@@ -1,0 +1,120 @@
+
+.blog-container {
+  background-color: var(--primary-dark);
+  margin: 40px 100px;
+}
+
+.blog-title {
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+}
+
+.blog-creation-time {
+  background-color: var(--primary-1);
+  padding: 5px;
+  color: white;
+  border-left: 10px solid var(--primary-3);
+  border-right: 10px solid var(--primary-3);
+}
+
+.blog-profile {
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-1);
+  color: white;
+  border-left: 10px solid var(--primary-3);
+  border-right: 10px solid var(--primary-3);
+}
+
+.blog-profile-img {
+  margin: 10px;
+}
+
+.blog-profile-name {
+  font-size: 1.7em;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.blog-tags {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.blog-tag-name {
+  margin: 10px 5px;
+  background-color: rgb(19, 19, 19);
+  padding: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.blog-tag-name:first-child {
+  margin-left: 10px;
+}
+
+.demo {
+  color: rgb(13, 131, 121);
+}
+
+/* **************************BLOG-CONTENT********************************** */
+
+.blog-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 0 10px;
+}
+
+.blog-content-wrapper:last-child {
+  padding-bottom: 30px;
+}
+
+.blog-content-text {
+  color: grey;
+  line-height: 25px;
+  margin: 5px 10px;
+}
+
+.blog-content-quote {
+  background-color: var(--primary-2);
+  color: var(--primary-3);
+  text-align: center;
+  font-size: 2em;
+  padding: 15px 10px;
+  font-style: italic;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin: 0 10px;
+}
+
+.blog-content-note {
+  padding: 10px;
+  color: rgb(192, 192, 192);
+  margin: 10px;
+  font-size: 1.1em;
+}
+
+.blog-content-heading-4 {
+  margin: 5px 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+}
+
+
+@media (max-width: 910px) {
+  .blog-container {
+    margin: 20px;
+  }
+
+  .blog-title {
+    font-size: 2em;
+  }
+}

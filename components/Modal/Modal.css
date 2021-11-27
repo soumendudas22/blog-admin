@@ -1,0 +1,31 @@
+.modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: grid;
+  place-items: center;
+  transition: 0.5s all ease-in;
+  z-index: 100;
+}
+
+.modal-wrapper {
+  height: 80vh;
+  width: 600px;
+  background-color: rgb(53, 53, 53);
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+  border-radius: 5px;
+  position: relative;
+  padding: 35px 15px;
+}
+
+#modal-close {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 10px;
+}

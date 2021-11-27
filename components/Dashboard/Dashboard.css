@@ -1,0 +1,126 @@
+.dashboard-wrapper {
+  display: grid;
+  grid-gap: 50px;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+
+.dashboard-card {
+  width: 100%;
+  height: 300px;
+  background-color: rgb(56, 56, 56);
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-areas: 
+    "dashboard-thumbnail dashboard-text"
+    "dashboard-thumbnail dashboard-text";
+    user-select: none;
+    cursor: pointer;
+}
+
+.dashboard-card-thumbanail {
+  grid-area: dashboard-thumbnail;
+  display: grid;
+  place-items: center;
+  width: 300px;
+  height: 300px;
+}
+
+.dashboard-card-content {
+  grid-area: dashboard-text;
+}
+
+.dashboard-card-title{
+  padding: 10px;
+  max-height: 150px;
+  width: 80%;
+}
+
+.ellipsed {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: white;
+  font-weight: 700;
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+
+.divider {
+  width: 100%;
+  background-color: var(--primary-1);
+  height: 2px;
+  margin: 10px 0;
+}
+
+.dashboard-card-time {
+  color: white;
+  font-weight: 100;
+  background-color: var(--primary-1);
+  padding: 5px;
+  padding-left: 10px;
+  border-left: 10px solid orange;
+  border-right: 10px solid orange;
+}
+
+.dashboard-card-desc {
+  padding: 0 10px;
+  color: grey;
+  width: 100%; 
+  height: 99px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+
+.dashboard-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dashboard-card-tag {
+  padding: 5px 15px;
+  margin: 10px 5px 0px 5px;
+  background-color: rgb(148, 52, 212);
+  color: rgb(255, 255, 255);
+  border-radius: 0px;
+  user-select: none;
+}
+
+.dashboard-card-tag:first-child {
+  margin-left: 10px;
+}
+
+
+@media (max-width: 910px){
+
+  .dashboard-wrapper {
+    padding: 10px;
+  }
+
+  .dashboard-card {
+    background-color: rgb(56, 56, 56);
+    grid-template-columns: 1fr;
+    grid-template-areas: "dashboard-thumbnail dashboard-thumbnail" 
+                          "dashboard-text dashboard-text";
+    height: fit-content;
+  }
+
+  .dashboard-card-title {
+    width: 100%;
+    font-size: 0.8em;
+  }
+
+  .ellipsed{
+    text-overflow: unset;
+    white-space:normal;
+  }
+
+  .dashboard-card-thumbanail {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: rgb(39, 39, 39);
+  }
+}
